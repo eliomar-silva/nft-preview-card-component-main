@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  
+  /* ### Neutral */
+  
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%) ;
+} 
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Very-dark-blue-main-BG);
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--Cyan);  
+}
+.transition {
+  transition: all 0.5s;
+}
+.center-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.color-white {
+  color: var(--White);
+}
+.color-grey {
+  color: var(--Soft-blue);  
+}
+.container {
+  width: 23.5rem;
+  height: 40rem;
+  background-color: var(--Very-dark-blue-card-BG);
+  border-radius: 1em;
+  padding: 1.65em;
+  box-shadow: 0em 1em 4.5em 0 rgba(0, 0, 0, 0.2);
+}
+.link-img {
+  position: relative;
+  display: block;
+  height: 20.2em;
+}
+.nft-img {
+  width: 100%;
+  border-radius: 0.4em; 
+}
+.over-lay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Cyan);
+  opacity: 0;
+}
+.icon-view {
+  opacity: 0;
+}
+a:hover .icon-view {
+  opacity: 1;
+}
+a:hover .over-lay {
+  opacity: 0.5;
+}
+.container h1 {
+  font-size: 1.5em;
+  margin-top: 0.9em;
+}
+
+.container p {
+  font-size: 1.2em;
+  margin-top: 0.9em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.nft-value-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -0.7em;
+}
+
+.nft-value-group .nft-value {
+  color: var(--Cyan);
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  position: relative;  
+  margin-left: 1.16em;
+}
+
+.nft-value-group .nft-value > img { 
+  width: 0.67em;
+}
+.nft-value-group .days-left { 
+  font-size: 1.04em;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+.nft-value-group .icons{
+  position: absolute;
+  top: 50%;
+  left: -1.1em;
+  transform: translateY(-50%);
+}
+
+.nft-value-group span > img.icons { 
+  width: 1.13em;
+  left: -1.5em;  
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Very-dark-blue-line);  
+  border: none;
+  margin-top: 0.74em;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5em;
+}
+.creation img {
+  width: 2.19rem;
+  height: 2.19rem;
+  border: 1px solid var(--White);
+  border-radius: 100%;
+}
+.creation h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 1em;
+}
+
